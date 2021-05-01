@@ -19,43 +19,43 @@
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="department"><font color="red">* </font>Department</label>
-                            <input type="text" class="form-control" id="department" name="department" placeholder="Department Name">
+                            <input type="text" class="form-control" id="department" name="department" placeholder="Department Name" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="program"><font color="red">* </font>Program</label>
-                            <input type="text" class="form-control" id="program" name="program" placeholder="Program Name">
+                            <input type="text" class="form-control" id="program" name="program" placeholder="Program Name" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstname"><font color="red">* </font>First name</label>
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lastname">Last name</label>
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="fathersName"><font color="red">* </font>Father's Name</label>
-                            <input type="text" class="form-control" id="fathersName" name="fathersName" placeholder="Father's Name">
+                            <input type="text" class="form-control" id="fathersName" name="fathersName" placeholder="Father's Name" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="mothersName"><font color="red">* </font>Mother's Name</label>
-                            <input type="text" class="form-control" id="mothersName" name="mothersName" placeholder="Mother's Name">
+                            <input type="text" class="form-control" id="mothersName" name="mothersName" placeholder="Mother's Name" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="email"><font color="red">* </font>Email</label>
-                            <input type="text" class="form-control" id="email" name="email" placeholder="email">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="email" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="contactNumber"><font color="red">* </font>Contact Number</label>
-                            <input type="phone" class="form-control" id="contact-number" name="contactNumber" placeholder="contact number ">
+                            <input type="phone" class="form-control" id="contact-number" name="contactNumber" placeholder="contact number " required>
                         </div>
                     </div>
 
@@ -68,15 +68,15 @@
                                         <p> <font color="red">* </font>Gender</p>
                                     </div>
                                     <div class="col-md-2 form-check mb-3">
-                                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked required>
                                         <label class="form-check-label" for="male">Male</label>
                                     </div>
                                     <div class="col-md-3 form-check mb-3">
-                                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                        <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
                                         <label class="form-check-label" for="female">Female</label>
                                     </div>
                                     <div class="col-md-2 form-check mb-3">
-                                        <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                        <input class="form-check-input" type="radio" name="gender" id="other" value="other" required>
                                         <label class="form-check-label" for="other">Other</label>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                 <div class="form-group row">
                                     <label for="birthDate" class="col-2 col-form-label">Date of Birth</label>
                                     <div class="col-8">
-                                        <input class="form-control" type="date" value="2021-04-18" id="birthDate" name="birthDate">
+                                        <input class="form-control" type="date" value="2021-04-18" id="birthDate" name="birthDate" required>
                                     </div>
                                 </div>
                             </div>
@@ -99,26 +99,26 @@
                     <div class="form-group row">
                         <div class="col-md-4 mb-3">
                             <label for="nationality"><font color="red">* </font>Nationality</label>
-                            <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Nationality">
+                            <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Nationality" required>
                         </div>
                         <div class="col-md-8 mb-3">
                             <label for="addressLine"><font color="red">* </font>Address</label>
-                            <input type="text" class="form-control" id="addressLine" name="addressline" placeholder="Street Address">
+                            <input type="text" class="form-control" id="addressLine" name="addressline" placeholder="Street Address" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="district"><font color="red">* </font>District</label>
-                            <input type="text" class="form-control" id="district" name="district" placeholder="District">
+                            <input type="text" class="form-control" id="district" name="district" placeholder="District" required>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="state"><font color="red">* </font>State</label>
-                            <input type="text" class="form-control" id="state" name="state" placeholder="State">
+                            <input type="text" class="form-control" id="state" name="state" placeholder="State" required>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="postCode"><font color="red">* </font>Postal Code</label>
-                            <input type="text" class="form-control" id="postCode" name="postCode" placeholder="Postal Code">
+                            <input type="number" class="form-control" id="postCode" name="postCode" placeholder="Postal Code" required>
                         </div>
                     </div>
 
@@ -129,24 +129,24 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="registrationNumber"><font color="red">* </font>Registration Number</label>
-                            <input type="number" class="form-control" id="registrationNumber" name="registrationNumber" placeholder="Registration Number">
+                            <input type="number" class="form-control" id="registrationNumber" name="registrationNumber" placeholder="Registration Number" required>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-2">
                             <label for="sscExam">Exam</label>
-                            <select class="form-select" aria-label="Default select example" id="sscExam" name="sscExam">
+                            <select class="form-select" aria-label="Default select example" id="sscExam" name="sscExam" required>
                                 <option value="SSC/Equivalent">SSC/Equivalent</option>
                             </select>
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="sscRollNumber"><font color="red">* </font>Roll Number</label>
-                            <input type="number" class="form-control" id="sscRollNumber" name="sscRollNumber" placeholder="Roll Number">
+                            <input type="number" class="form-control" id="sscRollNumber" name="sscRollNumber" placeholder="Roll Number" required>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="sscBoard"><font color="red">* </font>Board</label>
-                            <select class="form-select" aria-label="Default select example" id="sscBoard" name="sscBoard">
+                            <select class="form-select" aria-label="Default select example" id="sscBoard" name="sscBoard" required>
                                 <option value="">Select your board</option>
                                 <option value="barishal">Barishal</option>
                                 <option value="chittagong">Chittagong</option>
@@ -161,11 +161,11 @@
                         </div>
                         <div class="col-md-1 mb-3">
                             <label for="sscGpa"><font color="red">* </font>GPA</label>
-                            <input type="number" class="form-control" id="sscGpa" name="sscGpa" placeholder="GPA">
+                            <input type="number" class="form-control" id="sscGpa" name="sscGpa" placeholder="GPA" step=".01" required>
                         </div>
                         <div class="col-md-2 pt-n5">
                             <label for="sscGroup"><font color="red">* </font>Group</label>
-                            <select class="form-select" aria-label="Default select example" id="sscGroup">
+                            <select class="form-select" aria-label="Default select example" id="sscGroup" name="sscGroup" required>
                                 <option value="">Select your group</option>
                                 <option value="commerce">Commerce</option>
                                 <option value="humanities">Humanities</option>
@@ -174,23 +174,23 @@
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="sscPassingYear"><font color="red">* </font>Passing Year</label>
-                            <input type="number" class="form-control" id="sscPassingYear" name="sscPassingYear" placeholder="Passing Year">
+                            <input type="number" class="form-control" id="sscPassingYear" name="sscPassingYear" placeholder="Passing Year" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-2">
                             <label for="hscExam">Exam</label>
-                            <select class="form-select" aria-label="Default select example" id="hscExam" name="hscExam">
+                            <select class="form-select" aria-label="Default select example" id="hscExam" name="hscExam" required>
                                 <option value="HSC/Equivalent">HSC/Equivalent</option>
                             </select>
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="hscRollNumber"><font color="red">* </font>Roll Number</label>
-                            <input type="number" class="form-control" id="hscRollNumber" name="hscRollNumber" placeholder="Roll Number">
+                            <input type="number" class="form-control" id="hscRollNumber" name="hscRollNumber" placeholder="Roll Number" required>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="hscBoard"><font color="red">* </font>Board</label>
-                            <select class="form-select" aria-label="Default select example" id="hscBoard" name="hscBoard">
+                            <select class="form-select" aria-label="Default select example" id="hscBoard" name="hscBoard" required>
                                 <option value="">Select your board</option>
 
                                 <option value="barishal">Barishal</option>
@@ -206,11 +206,11 @@
                         </div>
                         <div class="col-md-1 mb-3">
                             <label for="hscGpa"><font color="red">* </font>GPA</label>
-                            <input type="number" class="form-control" id="hscGpa" name="hgpa" placeholder="GPA">
+                            <input type="number" class="form-control" id="hscGpa" name="hscGpa" placeholder="GPA" step=".01" required>
                         </div>
                         <div class="col-md-2 pt-n5">
                             <label for="hscGroup"><font color="red">* </font>Group</label>
-                            <select class="form-select" aria-label="Default select example" id="hscGroup">
+                            <select class="form-select" aria-label="Default select example" id="hscGroup" name="hscGroup" required>
                                 <option value="">Select your group</option>
                                 <option value="commerce">Commerce</option>
                                 <option value="humanities">Humanities</option>
@@ -219,11 +219,11 @@
                         </div>
                         <div class="col-md-2 mb-5">
                             <label for="hscPassingYear"><font color="red">* </font>Passing Year</label>
-                            <input type="number" class="form-control" id="hscPassingYear" name="hscPassingYear" placeholder="Passing Year">
+                            <input type="number" class="form-control" id="hscPassingYear" name="hscPassingYear" placeholder="Passing Year" required>
                         </div>
                     </div>
                     <div class="form-group form-check mx-auto col-3 mb-3">
-                        <input type="checkbox" class="form-check-input" id="allInformationCorrect" name="allInformationCorrect">
+                        <input type="checkbox" class="form-check-input" id="allInformationCorrect" name="allInformationCorrect" required>
                         <label class="form-check-label" for="allInformationCorrect">All information are correct</label>
                     </div>
                     <div class="col text-center d-grid gap-2 col-3 mx-auto">
