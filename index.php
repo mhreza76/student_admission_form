@@ -263,9 +263,9 @@
                 <div class="">
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button class="btn btn-warning me-md-2" formnovalidate >Save As Draft</button>
+                        <button class="btn btn-warning me-md-2" name="draft" formnovalidate >Save As Draft</button>
                         <button type="reset" class="btn btn-danger me-md-2">Reset</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                     </div>
 
 

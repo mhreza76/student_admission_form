@@ -1,7 +1,7 @@
 <?php
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
+//echo "<pre>";
+//print_r($_POST);
+//echo "</pre>";
 $department = $_POST['department'];
 $program = $_POST['program'];
 $firstname = $_POST['firstname'];
@@ -43,7 +43,11 @@ $conn = new mysqli($server_name, $user_name, $password, $database);
 if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
 }
-$sql = "INSERT INTO `admission` (`id`, `department`, `program`, `firstname`, `lastname`, `fathersName`, `mothersName`, `email`,
+if(isset($_POST['draft'])){
+    echo "Drafted Successfully";
+}
+if(isset($_POST['submit'])){
+    $sql = "INSERT INTO `admission` (`id`, `department`, `program`, `firstname`, `lastname`, `fathersName`, `mothersName`, `email`,
                          `contactNumber`, `gender`, `birthDate`, `nationality`, `addressline`, `district`, `state`,
                          `postCode`, `registrationNumber`, `sscExam`, `sscRollNumber`, `sscBoard`, `sscGpa`, `sscGroup`,
                          `sscPassingYear`, `hscExam`, `hscRollNumber`, `hscBoard`, `hscGpa`, `hscGroup`,
@@ -53,10 +57,28 @@ VALUES (NULL, '$department', '$program', '$firstname', '$lastname', '$fathersNam
         '$sscExam', '$sscRollNumber', '$sscBoard', '$sscGpa', '$sscGroup', '$sscPassingYear', '$hscExam', '$hscRollNumber', '$hscBoard', '$hscGpa',
         '$hscGroup', '$hscPassingYear')";
 
-$conn->query($sql);
-if($conn){
-    echo "Inserted Successfully";
+    $conn->query($sql);
+    if($conn){
+        echo "Inserted Successfully";
+    }
+    else{
+        echo "Not inserted, something wrong";
+    }$sql = "INSERT INTO `admission` (`id`, `department`, `program`, `firstname`, `lastname`, `fathersName`, `mothersName`, `email`,
+                         `contactNumber`, `gender`, `birthDate`, `nationality`, `addressline`, `district`, `state`,
+                         `postCode`, `registrationNumber`, `sscExam`, `sscRollNumber`, `sscBoard`, `sscGpa`, `sscGroup`,
+                         `sscPassingYear`, `hscExam`, `hscRollNumber`, `hscBoard`, `hscGpa`, `hscGroup`,
+                         `hscPassingYear`)
+VALUES (NULL, '$department', '$program', '$firstname', '$lastname', '$fathersName', '$mothersName', '$email', '$contactNumber', '$gender',
+        '$birthDate', '$nationality', '$addressline ', '$district', '$state', '$postCode', '$registrationNumber',
+        '$sscExam', '$sscRollNumber', '$sscBoard', '$sscGpa', '$sscGroup', '$sscPassingYear', '$hscExam', '$hscRollNumber', '$hscBoard', '$hscGpa',
+        '$hscGroup', '$hscPassingYear')";
+
+    $conn->query($sql);
+    if($conn){
+        echo "Inserted Successfully";
+    }
+    else{
+        echo "Not inserted, something wrong";
+    }
 }
-else{
-    echo "Not inserted, something wrong";
-}
+
