@@ -7,9 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admission Form</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" href="css/datepicker.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script>
+        $(function (){
+            $('.datepicker').datepicker({
+                startDate: '-3d'
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="container py-5  rounded" style="background-image: linear-gradient(deepskyblue, lightblue)!important;">
@@ -102,7 +111,7 @@
                             <div class="form-group row">
                                 <label for="birthDate" class="col-2 col-form-label">Date of Birth</label>
                                 <div class="col-8">
-                                    <input class="form-control" type="date" value="2021-04-18" id="birthDate"
+                                    <input class="form-control datepicker" data-date-format="mm/dd/yyyy" type="text" id="birthDate"
                                            name="birthDate" required>
                                 </div>
                             </div>
@@ -275,4 +284,6 @@
     </div>
 </div>
 </body>
+
+
 </html>
