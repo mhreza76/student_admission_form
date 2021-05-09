@@ -63,22 +63,6 @@ VALUES (NULL, '$department', '$program', '$firstname', '$lastname', '$fathersNam
     }
     else{
         echo "Not inserted, something wrong";
-    }$sql = "INSERT INTO `admission` (`id`, `department`, `program`, `firstname`, `lastname`, `fathersName`, `mothersName`, `email`,
-                         `contactNumber`, `gender`, `birthDate`, `nationality`, `addressline`, `district`, `state`,
-                         `postCode`, `registrationNumber`, `sscExam`, `sscRollNumber`, `sscBoard`, `sscGpa`, `sscGroup`,
-                         `sscPassingYear`, `hscExam`, `hscRollNumber`, `hscBoard`, `hscGpa`, `hscGroup`,
-                         `hscPassingYear`)
-VALUES (NULL, '$department', '$program', '$firstname', '$lastname', '$fathersName', '$mothersName', '$email', '$contactNumber', '$gender',
-        '$birthDate', '$nationality', '$addressline ', '$district', '$state', '$postCode', '$registrationNumber',
-        '$sscExam', '$sscRollNumber', '$sscBoard', '$sscGpa', '$sscGroup', '$sscPassingYear', '$hscExam', '$hscRollNumber', '$hscBoard', '$hscGpa',
-        '$hscGroup', '$hscPassingYear')";
-
-    $conn->query($sql);
-    if($conn){
-        echo "Inserted Successfully";
-    }
-    else{
-        echo "Not inserted, something wrong";
     }
 }
 
