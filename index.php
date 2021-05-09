@@ -78,6 +78,7 @@
                         <input type="phone" class="form-control" id="contact-number" name="contactNumber"
                                placeholder="contact number " required>
                     </div>
+                    </div>
                 </div>
 
                 <div class="mb-3">
